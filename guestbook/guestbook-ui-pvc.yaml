@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: test-pvc-thin
+  name: test-claim-thin
   namespace: guestbook
 spec:
   accessModes:
