@@ -18,3 +18,10 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: test
+          mountPath: /etc
+      volumes:
+      - name: test
+        persistentVolumeClaim:
+          claimName: test-claim-thin
