@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: test-rq
+  namespace: kubeseal
 spec:
   hard:
     requests.cpu: 500m
