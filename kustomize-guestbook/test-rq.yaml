@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: test-rq
+spec:
+  hard:
+    requests.cpu: 500m
+    requests.memory: 1Mi
+    limits.cpu: 1
+    limits.memory: 2Gi
